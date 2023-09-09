@@ -2,9 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
-    display: flex;
-    flex-direction: column;
-    background-color: red;
-
-}
