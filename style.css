@@ -1,7 +1,10 @@
-.hello{
-    color: red;
-    font-size: 20px;
-}
-.cupertino-pane {
-    margin: 20px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+
 }
