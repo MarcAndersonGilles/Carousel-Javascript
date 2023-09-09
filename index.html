@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="">
+    <h1>Header</h1>
+    <button class="cupertino" onclick="onClickOpen()">
+      Open cupertino
+    </button>
+    <button class="cupertino" onclick="onClickDestroy()">
+      Destroy cupertino
+    </button>
+    <div class="content cupertino-pane">
+
+      <div>
+        <button class="btn">Click me</button>
+        <h1 class="hello">Hello world</h1>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/cupertino-pane/dist/cupertino-pane.js"></script>
+  <script src="https://unpkg.com/cupertino-pane/dist/cupertino-pane.min.js"></script>
+  <!-- <script src="path/to/cupertino-pane.min.js"></script> -->
+  <script>
+    var myPane = new CupertinoPane(
+      '.cupertino-pane', // Pane container selector
+      {
+        parentElement: 'body', // Parent container
+        breaks: {
+          middle: { enabled: true, height: 400, bounce: true },
+          bottom: { enabled: true, height: 80 },
+        },
+        events: {
+          onDrag: () => console.log('Drag event')
+        }
+      }
+    );
+
+    // window.onload = function () {
+
+    //   myPane.present({ animate: true }).then(function (res) {
+    //     // Handle the result here if needed
+    //     console.log('Presentation completed', res);
+    //   });
+    // };
+
+    const onClickDestroy = async () => {
+      myPane.destroy({ animate: true })
+
+    }
+
+    const onClickOpen = async () => {
+      myPane.present({ animate: true })
+
+    }
+  </script>
+</body>
+
+</html>
