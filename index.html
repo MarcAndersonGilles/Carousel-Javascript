@@ -5,17 +5,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
-
+  <link href="/dist/output.css" rel="stylesheet">
   <title>Document</title>
 </head>
 
-<body>
-  <div class="">
-    <h1>Header</h1>
-    
-    <div class="">
+<body >
+  <div class="w-full h-full">
+    <div class=" flex flex-col  items-center ">
+     
+     <div class="flex items-center mt-72 bg-gray-500 gap-3 p-4 ">
 
-    
+      <div class="flex flex-col  items-center gap-4  ">
+        
+        <button class=" upItem bg-red-300 rounded  p-4"
+       
+        >
+          top
+        </button>
+        <div class="flex">
+        <span class="initialCarouselNumber "></span>/<span class="finalCarouselNumber "></span>
+      </div>
+
+        <button class="downItem bg-red-300 rounded  p-4"
+     
+        >
+        bot
+      </button>
+
+      </div>
+
+      <div class="flex" >
+        <div class="flex flex-col items-center" >
+          <img id="imageUser" class="w-32 h-32"  src="" alt="">
+          
+          <span class="arrayImages"></span>
+
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h1>Dancer</h1>
+        <span class="name"></span>
+        <button class="bg-white rounded   p-1 "> Voir le profil</button>
+      </div>
+
+     </div>
+
     </div>
   </div>
 
