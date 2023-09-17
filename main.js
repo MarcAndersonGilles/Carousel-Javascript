@@ -31,7 +31,7 @@ let initialNumber = 1;
 let currentNumber = initialNumber;
 initialCarouselNumber.textContent = currentNumber
 
-const imageUser = document.getElementById("#imageUser");
+const imageUser = document.getElementById("imageUser");
 console.log(imageUser)
 imageUser.setAttribute("src", arrayImages[0][1].href);
 
